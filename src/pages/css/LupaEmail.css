@@ -1,0 +1,126 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+    overflow: hidden;
+  }
+  .forgot-password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    background-image: url('@/assets/Login.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .img {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+  }
+  
+  .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .forgot-password-box {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  .forgot-password-box h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password-box p {
+    color: #9a9a9a;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .forgot-password-box button {
+    padding: 10px 20px;
+    background: #000000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .forgot-password-box button:hover {
+    background: #ff0000;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .forgot-password-box {
+      padding: 30px 20px;
+    }
+  
+    .forgot-password-box h2 {
+      font-size: 20px;
+    }
+  
+    .forgot-password-box p {
+      font-size: 14px;
+    }
+  
+    .forgot-password-box input {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .forgot-password-box button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .forgot-password-box {
+      padding: 20px 10px;
+    }
+  
+    .forgot-password-box h2 {
+      font-size: 18px;
+    }
+  
+    .forgot-password-box p {
+      font-size: 12px;
+    }
+  
+    .forgot-password-box input {
+      padding: 6px;
+      font-size: 12px;
+    }
+  
+    .forgot-password-box button {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  }

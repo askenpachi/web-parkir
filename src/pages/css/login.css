@@ -1,0 +1,145 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #C6E7FF 0%, #092136 100%); /* Gradasi dari Biru Muda Gelap ke Biru Tua Gelap */
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  background: rgba(97, 161, 195, 0.297);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px; 
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.sign-in-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in-section h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.sign-in-section input {
+  width: 80%;
+  padding: 9px;
+  margin: 10px 0;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+
+
+
+
+.input-label {
+  width: 80%;
+  margin-bottom: 1px; /* Mengatur jarak sedikit dari input field */
+  margin-left: px; /* Mengatur jarak sedikit dari sisi kiri */
+  margin-right: 15px;
+  font-size: 14px;  
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.eye-icon {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.sign-in-section .forgot-password {
+  color: #000;
+  margin-bottom: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sign-in-section button {
+  width: 60%;
+  padding: 8px 0;
+  background: #002aff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 15px; /* Tambahkan jarak ke atas */
+  
+}
+
+@media (max-width: 767px) {
+  .login-form {
+    width: 90%;
+  }
+
+  .sign-in-section h2 {
+    font-size: 20px;
+  }
+
+  .sign-in-section input {
+    padding: 8px;
+    margin: 8px 0;
+  
+
+  .sign-in-section button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .sign-in-section h2 {
+    font-size: 18px;
+  }
+
+  .sign-in-section input {
+    padding: 6px;
+    margin: 6px 0;
+  }
+
+  .sign-in-section button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
