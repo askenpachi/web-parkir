@@ -35,7 +35,9 @@
             v-model="password"
             placeholder="Password"
           />
-          
+          <span @click="togglePasswordVisibility" class="eye-icon">
+            <font-awesome-icon :icon="passwordVisible ? 'eye-slash' : 'eye'" />
+          </span>
         </div>
         
        
